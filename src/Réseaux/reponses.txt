@@ -1,0 +1,278 @@
+Carte réseau sans fil Wi-Fi :
+
+   Suffixe DNS propre à la connexion. . . : insa-lyon.fr
+   Description. . . . . . . . . . . . . . : Carte réseau Broadcom 802.11ac
+   Adresse physique . . . . . . . . . . . : 54-27-1E-FB-12-AB
+   DHCP activé. . . . . . . . . . . . . . : Oui
+   Configuration automatique activée. . . : Oui
+   Adresse IPv6 de liaison locale. . . . .: fe80::4db1:67bf:7d13:1e6a%29(préféré)
+   Adresse IPv4. . . . . . . . . . . . . .: 10.43.5.177(préféré)
+   Masque de sous-réseau. . . . . . . . . : 255.255.248.0
+   Bail obtenu. . . . . . . . . . . . . . : mercredi 16 mars 2016 08:21:08
+   Bail expirant. . . . . . . . . . . . . : mercredi 16 mars 2016 11:52:23
+   Passerelle par défaut. . . . . . . . . : 10.43.0.1
+   Serveur DHCP . . . . . . . . . . . . . : 134.214.188.141
+   IAID DHCPv6 . . . . . . . . . . . : 89401118
+   DUID de client DHCPv6. . . . . . . . : 00-01-00-01-1D-79-12-48-78-24-AF-A5-31-4A
+   Serveurs DNS. . .  . . . . . . . . . . : 10.10.10.11
+                                       10.10.10.10
+   Serveur WINS principal . . . . . . . . : 134.214.182.36
+   Serveur WINS secondaire. . . . . . . . : 134.214.182.141
+   NetBIOS sur Tcpip. . . . . . . . . . . : Activé
+
+--------------------------------------------------------------
+
+
+00001010 00101011 00000101 10110001
+***********************************
+11111111 11111111 11111000 00000000
+-----------------------------------
+00001010 00101011 00000101 00000000
+
+
+Submask : 255.255.254.0
+
+136.214.106.240
+
+10001000 11010110 01101010 11110000
+***********************************
+11111111 11111111 11111110 00000000
+-----------------------------------
+10001000 11010110 01101010 00000000
+
+10001000 11010110 01101010 00000001
+***********************************
+11111111 11111111 11111110 00000000
+-----------------------------------
+10001000 11010110 01101010 00000000
+
+10001000 11010110 01101011 11110000
+***********************************
+11111111 11111111 11111110 00000000
+-----------------------------------
+10001000 11010110 01101010 00000000
+
+10001000 11010110 01101100 11110000
+***********************************
+11111111 11111111 11111110 00000000
+-----------------------------------
+10001000 11010110 01101100 00000000 --> Pas sur le même sous-réseau
+
+---------------------------------------
+
+hostname --> DESKTOP-A3ROISF
+
+---------------------------------------
+
+NSLOOKUP : 
+
+Serveur par dÚfaut :   ns2.rocad.fr
+Address:  10.10.10.11
+
+Nom :    cipcnet.insa-lyon.fr
+Address:  134.214.153.138
+
+> www.lemonde.fr
+Serveur :   ns2.rocad.fr
+Address:  10.10.10.11
+
+Réponse ne faisant pas autorité :
+Nom :    gp1.wac.edgecastcdn.net
+Address:  93.184.220.20
+Aliases:  www.lemonde.fr
+          www.lemonde.fr.2-01-271d-000d.cdx.cedexis.net
+          wac.3604.edgecastcdn.net
+
+> lemonde.fr
+Serveur :   ns2.rocad.fr
+Address:  10.10.10.11
+
+Réponse ne faisant pas autorité :
+Nom :    lemonde.fr
+Address:  93.184.220.20
+
+Nom de machine du serveur DNS : ns2.rocad.fr
+Nom de ma machine : DESKTOP-A3ROISF.insa-lyon.fr ?
+
+---------------------------------------
+
+PING
+
+D:\Documents\Ressources\IDEAProjects\P2i Prog\src\Files>ping 10.43.5.177
+
+Envoi d’une requête 'Ping'  10.43.5.177 avec 32 octets de données :
+Réponse de 10.43.5.177 : octets=32 temps<1ms TTL=128
+Réponse de 10.43.5.177 : octets=32 temps<1ms TTL=128
+Réponse de 10.43.5.177 : octets=32 temps<1ms TTL=128
+Réponse de 10.43.5.177 : octets=32 temps<1ms TTL=128
+
+Statistiques Ping pour 10.43.5.177:
+    Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
+Durée approximative des boucles en millisecondes :
+    Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
+
+D:\Documents\Ressources\IDEAProjects\P2i Prog\src\Files>ping cipcgw.insa-lyon.fr
+
+Envoi d’une requête 'ping' sur cipcgw.insa-lyon.fr [134.214.152.107] avec 32 octets de données :
+Délai d’attente de la demande dépassé.
+Délai d’attente de la demande dépassé.
+Délai d’attente de la demande dépassé.
+Délai d’attente de la demande dépassé.
+
+Statistiques Ping pour 134.214.152.107:
+    Paquets : envoyés = 4, reçus = 0, perdus = 4 (perte 100%),
+
+--> La passerelle n'est pas accessible depuis internet, l'ordi n'y a pas accès.
+
+D:\Documents\Ressources\IDEAProjects\P2i Prog\src\Files>ping cipcserv.insa-lyon.fr
+
+Envoi d’une requête 'ping' sur cipcserv.insa-lyon.fr [134.214.152.202] avec 32 octets de données :
+Réponse de 134.214.152.202 : octets=32 temps=1 ms TTL=126
+Réponse de 134.214.152.202 : octets=32 temps=2 ms TTL=126
+Réponse de 134.214.152.202 : octets=32 temps=2 ms TTL=126
+Réponse de 134.214.152.202 : octets=32 temps=16 ms TTL=126
+
+Statistiques Ping pour 134.214.152.202:
+    Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
+Durée approximative des boucles en millisecondes :
+    Minimum = 1ms, Maximum = 16ms, Moyenne = 5ms
+
+--> Serveur accessible depuis internet.
+
+D:\Documents\Ressources\IDEAProjects\P2i Prog\src\Files>ping www.google.com
+
+Envoi d’une requête 'ping' sur www.google.com [172.217.19.68] avec 32 octets de données :
+Réponse de 172.217.19.68 : octets=32 temps=13 ms TTL=52
+Réponse de 172.217.19.68 : octets=32 temps=18 ms TTL=52
+Réponse de 172.217.19.68 : octets=32 temps=20 ms TTL=52
+Réponse de 172.217.19.68 : octets=32 temps=40 ms TTL=52
+
+Statistiques Ping pour 172.217.19.68:
+    Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
+Durée approximative des boucles en millisecondes :
+    Minimum = 13ms, Maximum = 40ms, Moyenne = 22ms
+
+--> Le NDD google.com est relié à un serveur qui est accessible depuis l'ordi : Latence d'environ 22ms. L'ip du serveur lié est 172.217.19.68
+
+---------------------------------------
+
+TRACERT :
+
+Détermination de l’itinéraire vers cipcnet.insa-lyon.fr [134.214.153.138]
+avec un maximum de 30 sauts :
+
+  1     *        *        *     Délai d’attente de la demande dépassé.
+  2     3 ms     2 ms     1 ms  v182-rtr-doua2.rocad.fr [134.214.182.1]
+  3    44 ms     2 ms     3 ms  cipcnet.insa-lyon.fr [134.214.153.138]
+
+------
+
+Détermination de l’itinéraire vers www.uchicago.edu [198.101.129.15]
+avec un maximum de 30 sauts :
+
+  1     *        *        *     Délai d’attente de la demande dépassé.
+  2    17 ms     3 ms     1 ms  v182-rtr-doua2.rocad.fr [134.214.182.1]
+  3    21 ms    13 ms     2 ms  172.16.17.10
+  4     2 ms     2 ms     2 ms  193.55.215.222
+  5     2 ms     2 ms     2 ms  vl142-te1-5-lyon1-rtr-021.noc.renater.fr [193.51.183.250]
+  6    13 ms     9 ms    12 ms  te0-3-0-0-lyon1-rtr-001.noc.renater.fr [193.51.177.14]
+  7    17 ms    13 ms    10 ms  te2-7-marseille1-rtr-021.noc.renater.fr [193.51.177.222]
+  8     8 ms    10 ms    14 ms  xe-11-1-1-100.mrs10.ip4.gtt.net [77.67.90.117]
+  9    23 ms    17 ms    41 ms  xe-0-0-0.mil21.ip4.gtt.net [89.149.184.113]
+ 10    15 ms    15 ms    15 ms  mno-b2-link.telia.net [80.239.128.117]
+ 11    31 ms    27 ms    53 ms  prs-bb2-link.telia.net [62.115.135.80]
+ 12   129 ms   100 ms   101 ms  nyk-bb2-link.telia.net [62.115.116.70]
+ 13   126 ms   139 ms   127 ms  chi-b21-link.telia.net [62.115.140.103]
+ 14   133 ms   137 ms   127 ms  rackspace-ic-134354-chi-b21.c.telia.net [80.239.160.50]
+ 15     *        *        *     Délai d’attente de la demande dépassé.
+ 16   188 ms   194 ms   204 ms  be42-corea.ord1.rackspace.net [50.56.6.165]
+ 17   161 ms   160 ms   148 ms  core2-CoreA.ord1.rackspace.net [184.106.126.127]
+ 18   130 ms   128 ms   168 ms  core2-aggr301a-4.ord1.rackspace.net [23.253.15.41]
+ 19   179 ms   184 ms   128 ms  198.101.129.15
+
+Itinéraire déterminé.
+
+------
+
+Détermination de l’itinéraire vers front-ig-slb.univ-lille1.fr [193.49.225.174]
+avec un maximum de 30 sauts :
+
+  1     *        *        *     Délai d’attente de la demande dépassé.
+  2     3 ms    25 ms     7 ms  v182-rtr-doua2.rocad.fr [134.214.182.1]
+  3     7 ms     2 ms     4 ms  172.16.17.10
+  4    24 ms     2 ms     5 ms  193.55.215.222
+  5     8 ms     7 ms     2 ms  vl142-te1-5-lyon1-rtr-021.noc.renater.fr [193.51.183.250]
+  6    21 ms    32 ms    90 ms  te0-3-0-0-lyon1-rtr-001.noc.renater.fr [193.51.177.14]
+  7    14 ms    81 ms     *     te0-0-0-6-paris1-rtr-001.noc.renater.fr [193.51.177.38]
+  8    33 ms    11 ms    11 ms  te1-2-lille-rtr-021.noc.renater.fr [193.51.177.60]
+  9    12 ms    11 ms    11 ms  noropale-vl340-gi8-3-lille-rtr-021.noc.renater.fr [193.51.183.89]
+ 10    23 ms    14 ms    81 ms  193.51.250.2
+ 11    32 ms    12 ms    14 ms  alteon1.univ-lille1.fr [193.49.225.45]
+ 12   148 ms    15 ms    87 ms  front-ig-slb.univ-lille1.fr [193.49.225.174]
+
+Itinéraire déterminé.
+
+--> Le chemin est tout d'abord commun. Puis, en fonction de l'adresse, le chemin diffère en fonction de la localisation du serveur.
+
+------
+
+Détermination de l’itinéraire vers www.uchicago.edu [198.101.129.15]
+avec un maximum de 30 sauts :
+
+  1     *        *        *     Délai d’attente de la demande dépassé.
+  2   226 ms    21 ms     2 ms  v182-rtr-doua2.rocad.fr [134.214.182.1]
+  3     2 ms     2 ms     2 ms  172.16.17.10
+  4    44 ms    31 ms     2 ms  193.55.215.222
+  5     2 ms     2 ms     2 ms  vl142-te1-5-lyon1-rtr-021.noc.renater.fr [193.51.183.250]
+  6    15 ms     9 ms     9 ms  te0-3-0-0-lyon1-rtr-001.noc.renater.fr [193.51.177.14]
+  7     8 ms     8 ms     7 ms  te2-7-marseille1-rtr-021.noc.renater.fr [193.51.177.222]
+  8     7 ms     8 ms     7 ms  xe-11-1-1-100.mrs10.ip4.gtt.net [77.67.90.117]
+  9    15 ms    16 ms    36 ms  xe-3-0-0.mil21.ip4.gtt.net [89.149.184.213]
+ 10    15 ms    15 ms    16 ms  mno-b2-link.telia.net [80.239.128.117]
+ 11   123 ms   110 ms    39 ms  prs-bb2-link.telia.net [62.115.135.80]
+ 12   165 ms   101 ms   188 ms  nyk-bb2-link.telia.net [62.115.135.104]
+ 13   143 ms   126 ms   126 ms  chi-b21-link.telia.net [62.115.117.165]
+ 14   146 ms   201 ms   192 ms  rackspace-ic-134354-chi-b21.c.telia.net [80.239.160.50]
+ 15     *        *        *     Délai d’attente de la demande dépassé.
+ 16   163 ms   134 ms   129 ms  be42-corea.ord1.rackspace.net [50.56.6.165]
+ 17   145 ms   127 ms   172 ms  corea-core2.ord1.rackspace.net [184.106.126.127]
+ 18   143 ms   129 ms   130 ms  core2-aggr301a-4.ord1.rackspace.net [23.253.15.41]
+ 19   135 ms   127 ms   127 ms  198.101.129.15
+
+Itinéraire déterminé.
+
+------
+
+Détermination de l’itinéraire vers www.cityofchicago.org [107.162.134.58]
+avec un maximum de 30 sauts :
+
+  1     *        *        *     Délai d’attente de la demande dépassé.
+  2    10 ms     *        7 ms  v182-rtr-doua2.rocad.fr [134.214.182.1]
+  3     2 ms     *        2 ms  172.16.17.10
+  4     2 ms     2 ms     2 ms  193.55.215.222
+  5     2 ms     2 ms     1 ms  vl142-te1-5-lyon1-rtr-021.noc.renater.fr [193.51.183.250]
+  6     8 ms     9 ms     9 ms  te0-3-0-0-lyon1-rtr-001.noc.renater.fr [193.51.177.14]
+  7     8 ms     7 ms    34 ms  te1-1-marseille1-rtr-021.noc.renater.fr [193.51.177.17]
+  8    19 ms     7 ms     9 ms  xe-11-1-1-100.mrs10.ip4.gtt.net [77.67.90.117]
+  9    18 ms    15 ms    14 ms  xe-0-0-0.mil21.ip4.gtt.net [89.149.184.113]
+ 10    26 ms    31 ms    39 ms  as6453.mil21.ip4.gtt.net [46.33.88.102]
+ 11    39 ms    26 ms    25 ms  if-1-2.tcore1.FR0-Frankfurt.as6453.net [195.219.166.130]
+ 12    24 ms    24 ms    60 ms  if-ae-6-2.thar1.F2C-Frankfurt.as6453.net [195.219.50.174]
+ 13    23 ms    22 ms    23 ms  195.219.148.2
+ 14    25 ms    23 ms    43 ms  107.162.2.123
+ 15    37 ms    23 ms    23 ms  107.162.134.58
+
+Itinéraire déterminé.
+
+--> Le serveur correspondant à www.cityofchicago.org n'est pas localisé au même emplacement que celui de l'université de Chicago. Il n'emprunte pas le même chemin
+
+
+---------------------------------------
+
+SERVICES :
+
+Le contenu du fichier représente le noms de protocoles réseaux connus, associés à leur port et un protocole de communication (TCP/UDP)...
+
+------
+
+ssh --> Une fois connecté, on peut s'identifier et effectuer des opérations sur la machine distante.

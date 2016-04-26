@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="Brut">
+    <output-path>$PROJECT_DIR$/out/artifacts/Brut</output-path>
+    <root id="root">
+      <element id="module-output" name="P2i Prog" />
+    </root>
+  </artifact>
+</component>
